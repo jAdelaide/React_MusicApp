@@ -9,7 +9,7 @@ export default function Login() {
         <div>
             <Container
             className= "d-flex justify-content-center align-items-center"
-            style= {{ minHeight: "100vh" }}>
+            style= {{ minHeight: "90vh" }}>
                 <a 
                 className= "btn btn-success btn-lg" 
                 href= { AUTH_URL }>

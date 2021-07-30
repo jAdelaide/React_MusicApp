@@ -74,8 +74,9 @@ export default function Dashboard({ code }) {
     return (
         <Container
             className= 'd-flex flex-column py-2'
-            style= {{ height: "100vh" }}
+            style= {{ height: "90vh" }}
         >
+            <h1>Noys:E</h1>
             <Form.Control
                 type= 'search'
                 placeholder= 'Search Songs/Artists'
@@ -86,7 +87,6 @@ export default function Dashboard({ code }) {
                 className= 'flex-grow-1 my-2'
                 style= {{ overflowY: 'auto'}}
             >
-                <h2>Songs:</h2>
                 { searchResults.map( track => (
                     <TrackSearchResult
                         track= { track }
