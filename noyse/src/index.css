@@ -12,49 +12,72 @@ body {
   background-color: rgb(150, 95, 155);
 }
 
+img {
+  margin-right: 10px
+}
+
 h1 {
   text-shadow: rgb(218, 101, 218) 2.5px 2px;
 }
 
 .container {
+  min-width: 700px;
   max-width: 60vw;
-  /* max-width: 700px; */
   margin: 30px auto;
   overflow: auto;
   min-height: 300px;
   background-color: rgb(220, 185, 240);
-  border: 3px solid ;
+  border: 3px solid;
   padding: 30px;
   border-radius: 20px;
 }
 
-.btn {
+.btn, .btn:focus {
   display: inline-block;
   background: rgb(0, 37, 30);
   color: rgb(0, 185, 0);
-  border: none;
-  padding: 10px 20px;
-  margin: 5px;
+  padding: 10px 10px;
+  margin: 0px 5px;
   border: 3px solid rgb(0, 124, 93);
   border-radius: 25px;
   cursor: pointer;
-  text-decoration: none;
   font-size: 20px;
   font-family: inherit;
   text-shadow: rgb(0, 60, 45) 1.5px 1.5px;
-  box-shadow: rgb(0, 50, 30) 1.5px 2px, rgb(0, 80, 60) 5.5px 7px;
+  box-shadow: rgb(0, 50, 30) 1.5px 2px 1px 1px, rgb(0, 80, 60) 5.5px 7px;
 }
 
 .btn:hover {
-  transform: scale(0.9);
+  color: rgb(230, 255, 230);
+  background-color: rgb(17, 117, 67);
+  transform: scale(1.1);
   border: 3px solid rgb(0, 50, 30);
-  box-shadow: rgb(0, 148, 89) 1.5px 2px, rgb(0, 80, 60) 5.5px 7px;
+  box-shadow: rgb(0, 148, 89) 1.5px 2px 1px 1px, rgb(0, 80, 60) 5.5px 7px;
 }
 
-.btn:focus {
-  transform: scale(0.8);
+.btn:active {
+  transform: scale(1.1) translateY(4px) translateX(2px);
+  box-shadow: rgb(0, 148, 89) 1.5px 2px, rgb(0, 80, 60) 3px 4px;
 }
 
-img {
-  margin-right: 10px
+.btnHome {
+  float: right;
+  height: 40px;
+  width: 90px;
+  text-align: center;
+  line-height: 10px;
+}
+
+.headerRow {
+  height: 50px;
+}
+
+.titleDiv {
+  float: left;
+  width: 100px;
+  margin-top: 5px;
+}
+
+.PlayerRSWP {
+  background-color: blue;
 }

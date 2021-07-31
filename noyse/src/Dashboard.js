@@ -9,6 +9,8 @@ import axios from 'axios'
 const spotifyApi = new SpotifyWebApi({
     clientId: '50ac6b1ef9ed4171939657783cf817d7'
 })
+const AUTH_URL =
+    "https://accounts.spotify.com/authorize?client_id=50ac6b1ef9ed4171939657783cf817d7&response_type=code&redirect_uri=http://localhost:3000&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state"
 
 export default function Dashboard({ code }) {
     const accessToken = useAuth( code )
@@ -76,13 +78,29 @@ export default function Dashboard({ code }) {
             className= 'd-flex flex-column py-2'
             style= {{ height: "90vh" }}
         >
-            <h1>Noys:E</h1>
+            <div className= 'headerRow'>
+                <div className= 'titleDiv'>
+                    <h1>
+                        Noys:E
+                    </h1>
+                </div>
+
+                <a href= { AUTH_URL }>
+                    <button
+                        className= 'btn btnHome'
+                    >
+                        Home
+                    </button>
+                </a>
+            </div>
+
             <Form.Control
                 type= 'search'
                 placeholder= 'Search Songs/Artists'
                 value= { search }
                 onChange= { e => setSearch(e.target.value) }
             />
+
             <div
                 className= 'flex-grow-1 my-2'
                 style= {{ overflowY: 'auto'}}
@@ -94,6 +112,7 @@ export default function Dashboard({ code }) {
                         chooseTrack= { chooseTrack }
                     />
                 ))}
+
                 { searchResults.length === 0  && (
                     <div 
                         className= 'text-center'
@@ -103,9 +122,10 @@ export default function Dashboard({ code }) {
                     </div>
                 )}
             </div>
+
             <div>
                 <Player
-                    accessToken={ accessToken } 
+                    accessToken= { accessToken } 
                     trackUri= { playingTrack?.uri }
                 />
             </div>

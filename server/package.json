@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "devStart": "nodemon server.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "server": "json-server --watch db.json --port 5005"
   },
   "keywords": [],
   "author": "",
