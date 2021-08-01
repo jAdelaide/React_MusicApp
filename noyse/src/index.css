@@ -66,18 +66,36 @@ h1 {
   width: 90px;
   text-align: center;
   line-height: 10px;
+  margin-top: 3px;
 }
 
 .headerRow {
   height: 50px;
+  margin-bottom: 5px;
 }
 
 .titleDiv {
   float: left;
   width: 100px;
-  margin-top: 5px;
 }
 
-.PlayerRSWP {
-  background-color: blue;
+.dashboardDiv {
+  margin: auto;
+  max-width: 88.5vw;
+  max-height: 90%;
+  overflow-x: visible;
+}
+
+.songsContainer {
+  float: left;
+  height: 90vh;
+  min-width: 700px;
+  max-width: 60vw;
+}
+
+.playlistContainer {
+  float: right;
+  height: 90vh;
+  min-width: 300px;
+  max-width: 28vw;
 }

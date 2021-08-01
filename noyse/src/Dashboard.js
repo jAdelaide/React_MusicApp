@@ -74,61 +74,68 @@ export default function Dashboard({ code }) {
     }, [ search, accessToken ])
 
     return (
-        <Container
-            className= 'd-flex flex-column py-2'
-            style= {{ height: "90vh" }}
-        >
-            <div className= 'headerRow'>
-                <div className= 'titleDiv'>
-                    <h1>
-                        Noys:E
-                    </h1>
+        <div className= 'row dashboardDiv'>
+            <Container
+                className= 'd-flex flex-column py-2 songsContainer'
+            >
+                <div className= 'headerRow'>
+                    <div className= 'titleDiv'>
+                        <h1>
+                            Noys:E
+                        </h1>
+                    </div>
+
+                    <a href= { AUTH_URL }>
+                        <button
+                            className= 'btn btnHome'
+                        >
+                            Home
+                        </button>
+                    </a>
                 </div>
 
-                <a href= { AUTH_URL }>
-                    <button
-                        className= 'btn btnHome'
-                    >
-                        Home
-                    </button>
-                </a>
-            </div>
-
-            <Form.Control
-                type= 'search'
-                placeholder= 'Search Songs/Artists'
-                value= { search }
-                onChange= { e => setSearch(e.target.value) }
-            />
-
-            <div
-                className= 'flex-grow-1 my-2'
-                style= {{ overflowY: 'auto'}}
-            >
-                { searchResults.map( track => (
-                    <TrackSearchResult
-                        track= { track }
-                        key= { track.uri }
-                        chooseTrack= { chooseTrack }
-                    />
-                ))}
-
-                { searchResults.length === 0  && (
-                    <div 
-                        className= 'text-center'
-                        style= {{ whiteSpace: 'pre' }}
-                    >
-                        { lyrics }
-                    </div>
-                )}
-            </div>
-
-            <div>
-                <Player
-                    accessToken= { accessToken } 
-                    trackUri= { playingTrack?.uri }
+                <Form.Control
+                    type= 'search'
+                    placeholder= 'Search Songs/Artists'
+                    value= { search }
+                    onChange= { e => setSearch(e.target.value) }
                 />
-            </div>
-        </Container>
+
+                <div
+                    className= 'flex-grow-1 my-2'
+                    style= {{ overflowY: 'auto'}}
+                >
+                    { searchResults.map( track => (
+                        <TrackSearchResult
+                            track= { track }
+                            key= { track.uri }
+                            chooseTrack= { chooseTrack }
+                        />
+                        ))}
+
+                    { searchResults.length === 0  && (
+                        <div 
+                        className= 'text-center'
+                            style= {{ whiteSpace: 'pre' }}
+                        >
+                            { lyrics }
+                        </div>
+                    )}
+                </div>
+
+                <div>
+                    <Player
+                        accessToken= { accessToken } 
+                        trackUri= { playingTrack?.uri }
+                        />
+                </div>
+            </Container>
+
+            <Container
+                className= 'd-flex flex-column py-2 playlistContainer'
+            >
+                <p>Hello</p>
+            </Container>
+        </div>
     )
 }
