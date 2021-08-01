@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import useAuth from './useAuth'
 import Player from './Player'
 import TrackSearchResult from './TrackSearchResult'
+import Playlist from './components/Playlist'
 import { Container, Form } from 'react-bootstrap'
 import SpotifyWebApi from 'spotify-web-api-node'
 import axios from 'axios'
@@ -131,11 +132,7 @@ export default function Dashboard({ code }) {
                 </div>
             </Container>
 
-            <Container
-                className= 'd-flex flex-column py-2 playlistContainer'
-            >
-                <p>Hello</p>
-            </Container>
+            <Playlist />
         </div>
     )
 }

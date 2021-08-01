@@ -89,13 +89,50 @@ h1 {
 .songsContainer {
   float: left;
   height: 90vh;
-  min-width: 700px;
+  /* min-width: 700px; */
+  min-width: 400px;
   max-width: 60vw;
 }
 
 .playlistContainer {
   float: right;
   height: 90vh;
-  min-width: 300px;
+  /* min-width: 300px; */
+  min-width: 200px;
   max-width: 28vw;
+  padding: 10px;
+}
+
+.playlistImage {
+  float: left;
+  width: 20%;
+  height: 50px;
+  margin-left: 3px;
+  margin-right: 5px;
+  padding-right: 0;
+  padding-bottom: 10px;
+}
+
+.playlistTrack {
+  float: right;
+  width: 70%;
+  height: 50px;
+  margin-left: 0;
+  padding-left: 0px;
+}
+
+.playlistTitles {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 3px;
+  margin-bottom: 0px;
+}
+
+.playlistArtists {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(119, 98, 175);
+  text-shadow: rgb(225, 216, 231) 1px 1px;
+  margin-top: -5px;
+  margin-left: 5px;
 }

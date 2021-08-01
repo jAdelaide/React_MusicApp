@@ -2,15 +2,15 @@
   "tasks": [
     {
       "id": 1,
-      "albumUrl": "https://i.scdn.co/image/ab67616d00004851557341c7755b44dc1a838f1c",
       "title": "One Beer",
-      "artist": "MF DOOM"
+      "artist": "MF DOOM",
+      "albumImage": "https://i.scdn.co/image/ab67616d00004851557341c7755b44dc1a838f1c"
     },
     {
       "id": 2,
-      "albumUrl": "https://i.scdn.co/image/ab67616d00004851f56213eede5f2e6a6065fb6d",
       "title": "Doomsday",
-      "artist": "MF DOOM"
+      "artist": "MF DOOM",
+      "albumImage": "https://i.scdn.co/image/ab67616d00004851f56213eede5f2e6a6065fb6d"
     }
     ]
 }
