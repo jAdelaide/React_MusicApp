@@ -6,4 +6,5 @@ Making a Spotify powered music app with React.js using this [Web Dev Simplified 
 ### npm run devStart
 from the server directory, and
 ### npm start
+### npm run server
 from the noyse directory - then view the player at http://localhost:3000/
