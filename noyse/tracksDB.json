@@ -2,13 +2,19 @@
   "tasks": [
     {
       "id": 1,
-      "title": "One Beer",
-      "artist": "MF DOOM",
-      "albumImage": "https://i.scdn.co/image/ab67616d00004851557341c7755b44dc1a838f1c"
+      "title": "Rainbow Bap",
+      "artist": "Jaden",
+      "albumImage": "https://i.scdn.co/image/ab67616d00004851421325b3842bc2f4cf65f1d3"
     },
     {
       "id": 2,
-      "title": "Doomsday",
+      "title": "EARFQUAKE",
+      "artist": "Tyler, The Creator",
+      "albumImage": "https://i.scdn.co/image/ab67616d000048517005885df706891a3c182a57"
+    },
+    {
+      "id": 3,
+      "title": "Rhymes Like Dimes",
       "artist": "MF DOOM",
       "albumImage": "https://i.scdn.co/image/ab67616d00004851f56213eede5f2e6a6065fb6d"
     }
